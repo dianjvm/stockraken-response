@@ -1,0 +1,14 @@
+{
+    "name": "stockraken/response",
+    "description": "Standar respon API stockraken",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dian Mukti Wibowo",
+            "email": "dian.wibowo@clickoding.id"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
