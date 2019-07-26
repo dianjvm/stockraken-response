@@ -1,14 +1,29 @@
 {
     "name": "stockraken/response",
     "description": "Standar respon API stockraken",
+    "keywords": [
+        "stockraken",
+        "clickoding"
+    ],
     "type": "library",
     "license": "MIT",
     "authors": [
         {
             "name": "Dian Mukti Wibowo",
-            "email": "dian.wibowo@clickoding.id"
+            "email": "dian.wibowo@clickoding.id",
+            "role": "Development"
         }
     ],
     "minimum-stability": "dev",
-    "require": {}
+    "require": {},
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Stockraken\\Response\\ResponseServiceProvider"
+            ]
+        }
+    }
 }
