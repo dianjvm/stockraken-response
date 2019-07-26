@@ -25,5 +25,10 @@
                 "Stockraken\\Response\\ResponseServiceProvider"
             ]
         }
+    },
+    "autoload": {
+        "psr-4": {
+            "Stockraken\\Response\\": "src"
+        }
     }
 }
