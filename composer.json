@@ -14,7 +14,7 @@
             "role": "Development"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {},
     "config": {
         "sort-packages": true
