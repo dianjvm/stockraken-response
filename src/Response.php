@@ -35,4 +35,31 @@ class Response extends Controller
     	return response()->json($hasil, self::$code);
 
     }
+
+    // Error response
+    public static function errorValidator($data, $arraykah = false, $pemisah = ', ') {
+
+        $message = array();
+
+        if (is_array($data)) {
+            
+            foreach ($data as $x) {
+                
+                $message[] = $x;
+
+            }
+
+        }
+
+        $pesan  = implode($pemisah, $message);
+
+        $hasil  = array(
+            "status"    => false,
+            "message"   => ($arraykah === false) ? str_replace('.', '', $pesan) : 'Form validasi gagal!',
+            "data"      => ($arraykah) ? $message : null
+        );
+
+        return response()->json($hasil, 200);
+
+    }
 }
